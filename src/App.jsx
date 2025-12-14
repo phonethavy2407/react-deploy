@@ -1,12 +1,13 @@
 import React from "react";
 
+import { Routes, Route } from "react-router";
 import MarKetItemApp from "./components/MarKetItemApp";
 
 const App = () => {
   return (
-    <div>
-      <MarKetItemApp />
-    </div>
+    <Routes>
+      <Route index element={<MarKetItemApp />} />
+    </Routes>
   );
 };
 
